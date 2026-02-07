@@ -1,5 +1,3 @@
-const name = "Aa I Aarsh I Harsh - I
-
 
 
 function fetchcurr(locate){
@@ -94,3 +92,4 @@ document.getElementById("w-locate").addEventListener("submit", (e) => {
   fetchfore(locate);
 
 });
+
