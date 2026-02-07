@@ -79,7 +79,7 @@ function fetchcurr(locate){
 }
 
 function fetchfore(locate){
-  var url = `https://api.weatherbit.io/v2.0/forecast/daily?city=${locate}&key=52f8cec380fb4ac0a0535a17a322c0a2`;
+  var url = `https://api.weatherbit.io/v2.0/forecast/daily?city=${locate}&key=5b1f1702edbb4a2b92ad74b2fecf65e2`;
   fetch(url)
     .then(resp => resp.json())
     .then(info => {
@@ -117,3 +117,4 @@ document.getElementById("w-locate").addEventListener("submit", (e) => {
   fetchfore(locate);
 
 });
+
