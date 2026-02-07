@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aa I Aarsh - I</title>
+	<link rel="stylesheet" type="text/css" href="Aa I Aarsh - I.css">
+	<script src="Aa I Aarsh - I.js" defer></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+	<div id="top-layer">
+		<img id="w-icon"></img>
+		
+		<form id="w-locate">
+			<input type="text" id="text-l" name="locate" value="Delhi" placeholder="AnywhereIN">
+			<br><button type="submit" id="butn-l">Find Weather Information</button>
+		</form>
+		<div class="location-data">
+			<div>
+				<span id="city"></span>,
+				<span id="country"></span>
+			</div>
+			<div id="latitude"></div>
+			<div id="longitude"></div>
+		</div>
+	</div>
+
+	
+
+	<div class="curr-weather">
+  		<div class="w-container">
+  			<div id="temp" class="w-item"></div>
+  			<div id="aqi" class="w-item"></div>
+  			<div id="dewpt" class="w-item"></div>
+  			<div id="sunrise" class="w-item"></div>
+			
+  			<div id="wdesc" class="w-item"></div>
+  			<div id="windd" class="w-item"></div>
+  			<div id="winds" class="w-item"></div>
+  			<div id="sunset" class="w-item"></div>
+  		</div>
+</div>
+
+	<br>
+	<div class="fore-weather-div">
+		<table class="fore-weather">
+			<tr class="icon-row">
+    		    <td id="icon0"><img id="icoi0"></img></td>
+    		    <td id="icon1"><img id="icoi1"></img></td>
+    		    <td id="icon2"><img id="icoi2"></img></td>
+    		    <td id="icon3"><img id="icoi3"></img></td>
+    		    <td id="icon4"><img id="icoi4"></img></td>
+    		    <td id="icon5"><img id="icoi5"></img></td>
+    		    <td id="icon6"><img id="icoi6"></img></td>
+    		</tr>
+    		<tr class="date-row">
+    		    <th id="date0">Day0</th>
+    		    <th id="date1">Day1</th>
+    		    <th id="date2">Day2</th>
+    		    <th id="date3">Day3</th>
+    		    <th id="date4">Day4</th>
+    		    <th id="date5">Day5</th>
+    		    <th id="date6">Day6</th>
+    		</tr>
+    		<tr class="thig-row">
+    		    <td id="thige0"><span class="material-symbols-outlined up-arrow">keyboard_arrow_up</span><span id="thig0"></span></td>
+    		    <td id="thige1"><span class="material-symbols-outlined up-arrow">keyboard_arrow_up</span><span id="thig1"></span></td>
+    		    <td id="thige2"><span class="material-symbols-outlined up-arrow">keyboard_arrow_up</span><span id="thig2"></span></td>
+    		    <td id="thige3"><span class="material-symbols-outlined up-arrow">keyboard_arrow_up</span><span id="thig3"></span></td>
+    		    <td id="thige4"><span class="material-symbols-outlined up-arrow">keyboard_arrow_up</span><span id="thig4"></span></td>
+    		    <td id="thige5"><span class="material-symbols-outlined up-arrow">keyboard_arrow_up</span><span id="thig5"></span></td>
+    		    <td id="thige6"><span class="material-symbols-outlined up-arrow">keyboard_arrow_up</span><span id="thig6"></span></td>
+    		</tr>
+    		<tr class="tlow-row">
+    		    <td id="tlowe0"><span class="material-symbols-outlined down-arrow">keyboard_arrow_down</span><span id="tlow0"></span></td>
+    		    <td id="tlowe1"><span class="material-symbols-outlined down-arrow">keyboard_arrow_down</span><span id="tlow1"></span></td>
+    		    <td id="tlowe2"><span class="material-symbols-outlined down-arrow">keyboard_arrow_down</span><span id="tlow2"></span></td>
+    		    <td id="tlowe3"><span class="material-symbols-outlined down-arrow">keyboard_arrow_down</span><span id="tlow3"></span></td>
+    		    <td id="tlowe4"><span class="material-symbols-outlined down-arrow">keyboard_arrow_down</span><span id="tlow4"></span></td>
+    		    <td id="tlowe5"><span class="material-symbols-outlined down-arrow">keyboard_arrow_down</span><span id="tlow5"></span></td>
+    		    <td id="tlowe6"><span class="material-symbols-outlined down-arrow">keyboard_arrow_down</span><span id="tlow6"></span></td>
+    		</tr>
+			<tr class="rhum-row">
+    		    <td id="rhume0"><span class="material-symbols-outlined humid-drop">humidity_mid</span><span id="rhum0"></span></td>
+    		    <td id="rhume1"><span class="material-symbols-outlined humid-drop">humidity_mid</span><span id="rhum1"></span></td>
+    		    <td id="rhume2"><span class="material-symbols-outlined humid-drop">humidity_mid</span><span id="rhum2"></span></td>
+    		    <td id="rhume3"><span class="material-symbols-outlined humid-drop">humidity_mid</span><span id="rhum3"></span></td>
+    		    <td id="rhume4"><span class="material-symbols-outlined humid-drop">humidity_mid</span><span id="rhum4"></span></td>
+    		    <td id="rhume5"><span class="material-symbols-outlined humid-drop">humidity_mid</span><span id="rhum5"></span></td>
+    		    <td id="rhume6"><span class="material-symbols-outlined humid-drop">humidity_mid</span><span id="rhum6"></span></td>
+    		</tr>
+    		<tr class="dewp-row">
+    		    <td id="dewpe0"><span class="material-symbols-outlined dew-point">dew_point</span><span id="dewp0"></span></td>
+    		    <td id="dewpe1"><span class="material-symbols-outlined dew-point">dew_point</span><span id="dewp1"></span></td>
+    		    <td id="dewpe2"><span class="material-symbols-outlined dew-point">dew_point</span><span id="dewp2"></span></td>
+    		    <td id="dewpe3"><span class="material-symbols-outlined dew-point">dew_point</span><span id="dewp3"></span></td>
+    		    <td id="dewpe4"><span class="material-symbols-outlined dew-point">dew_point</span><span id="dewp4"></span></td>
+    		    <td id="dewpe5"><span class="material-symbols-outlined dew-point">dew_point</span><span id="dewp5"></span></td>
+    		    <td id="dewpe6"><span class="material-symbols-outlined dew-point">dew_point</span><span id="dewp6"></span></td>
+    		</tr>
+			<tr class="desc-row">
+    		    <td id="desc0">Desc: </td>
+    		    <td id="desc1">Desc: </td>
+    		    <td id="desc2">Desc: </td>
+    		    <td id="desc3">Desc: </td>
+    		    <td id="desc4">Desc: </td>
+    		    <td id="desc5">Desc: </td>
+    		    <td id="desc6">Desc: </td>
+    		</tr>
+		</table>
+	</div>
+	
+
+	<p></p>
+</body>
+</html>
