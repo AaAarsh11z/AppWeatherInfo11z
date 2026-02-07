@@ -1,28 +1,7 @@
-function updateClock() {
-  const now = new Date();
-
-  let hour = now.getHours();
-  const minute = now.getMinutes();
-  const second = now.getSeconds();
-
-  const ampm = hour >= 12 ? "PM" : "AM";
-  hour = hour % 12 || 12;
-
-  const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-  const months = [
-    "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
-  ];
-
-  document.getElementById("hour").textContent = String(hour).padStart(2, "0");
-  document.getElementById("min").textContent = String(minute).padStart(2, "0");
-  document.getElementById("sec").textContent = String(second).padStart(2, "0");
-  document.getElementById("ampm").textContent = ampm;
-
-  document.getElementById("day").textContent = days[now.getDay()];
-  document.getElementById("date").textContent = `${now.getDate()} ${months[now.getMonth()]} ${now.getFullYear()}`;
+const name = "Aa I Aarsh I Harsh - I
 
 
-}
+
 function fetchcurr(locate){
   var url = `https://api.weatherbit.io/v2.0/current?city=${locate}&key=5b1f1702edbb4a2b92ad74b2fecf65e2`;
 
@@ -105,8 +84,6 @@ function fetchfore(locate){
     .catch(err => console.error("Weather fetch error:", err));
 }
 
-updateClock();
-setInterval(updateClock, 1000);
 
 var locate = "Delhi"; fetchcurr(locate); fetchfore(locate);
 
@@ -117,4 +94,3 @@ document.getElementById("w-locate").addEventListener("submit", (e) => {
   fetchfore(locate);
 
 });
-
